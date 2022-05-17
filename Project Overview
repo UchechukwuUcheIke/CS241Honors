@@ -1,0 +1,8 @@
+Starting this TicTacToe project made me reconsider how to work out client to server interactions in C. At first I used the client and server set up described in the CS 241
+textbook, but then the issue arose of having to manage two clients simultaneous. I then opted for a set up similar to the charming chatbots lab. The only problem with that
+set up being that it allowed both users to communicate simultaneously. I then decided that the best course of action was to try to control the threads handling the clients
+using semaphores and barriers to only allow one client to make a move on the board at a time.
+
+Had I had more time to complete this project, I would have added a Graphical User interface to the tictactoe game like I had originally planned. If I wanted to stick with
+the Command Line Interface that I already implemented, I would have added more error checking to the implementation.
+
